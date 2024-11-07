@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Tab, Tabs } from 'react-bootstrap';
-import './tailwind.css';
+
 
 
 

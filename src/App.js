@@ -1,27 +1,53 @@
-import logo from './logo.svg';
-import {useEffect} from 'react';
-import styles from './App.module.css';
+import './style.scss';
 
-// {styles.App} kullanma sebebi obje olması ve imporrt yöntemi de değişti
-
-// 3. video eklentisi
-import { Title } from './Components';
-import Bootstrap from './Bootstrap';
-import Tailwind from './tailwind';
-import './tailwind.css';
-
+/*
+function Button(props) {
+  +
+    return <button>{props.text}</button>
+  +
+  }
+*/
 function App() {
-  return (
-    <div className={styles.App}>
+  const name = 'Tayfun'
+	/*
++
+  const h1 = createElement('h1', null, 'prototurk.com')
++
+  const ul = createElement('ul', null, todos.map(todo => createElement('li', null, todo)))
++
+	const button = createElement(Button, {
++
+		text: 'Buton Texti'
++
+	}, null)
++
+  return createElement('main', {
++
+    className: 'test',
++
+    id: 'main'
++
+  }, h1, ul, button)
++
+	 */
 
-      <Title>{process.env.REACT_APP_API_URL}</Title>
-      <Title theme="dark" >{process.env.REACT_APP_API_URL}</Title>
-      test13
-      <h3>{process.env.NODE_ENV}</h3>
-      <Bootstrap />
-      <Tailwind />
-    </div>
-  );
+  return( 
+  <>
+    +
+    +
+          <h1 tabIndex="3" style={{color: 'red', backgroundColor: 'yellow'}}>prototurk.com</h1>
+    +
+          <label htmlFor="search" tabIndex="2" onClick={() => alert('merhaba')}>Arama</label>
+    +
+          <input type="text" id="search" tabIndex="1" />
+    +
+          <ul>
+    +
+            
+          
+    +
+          </ul>
+    +
+        </>)
 }
-
 export default App;
